@@ -17,28 +17,28 @@ export DEFAULTYESNO="y"
 
 # Branch name to pull from server. Use master for stable.
 BRANCH=master
-export BASE_DOWNLOAD=https://raw.githubusercontent.com/loftuxab/alfresco-ubuntu-install/$BRANCH
+export BASE_DOWNLOAD=https://raw.githubusercontent.com/Aletibazo/alfresco-ubuntu-install/$BRANCH
 export KEYSTOREBASE=https://svn.alfresco.com/repos/alfresco-open-mirror/alfresco/HEAD/root/projects/repository/config/alfresco/keystore
 
 #Change this to prefered locale to make sure it exists. This has impact on LibreOffice transformations
 #export LOCALESUPPORT=sv_SE.utf8
-export LOCALESUPPORT=en_US.utf8
+export LOCALESUPPORT=es_ES.utf8
 
-export TOMCAT_DOWNLOAD=http://archive.apache.org/dist/tomcat/tomcat-8/v8.0.53/bin/apache-tomcat-8.0.53.tar.gz
+export TOMCAT_DOWNLOAD=http://ftp.cixug.es/apache/tomcat/tomcat-8/v8.5.50/bin/apache-tomcat-8.5.50.tar.gz
 export JDBCPOSTGRESURL=https://jdbc.postgresql.org/download
-export JDBCPOSTGRES=postgresql-42.2.5.jar
+export JDBCPOSTGRES=postgresql-42.2.9.jar
 export JDBCMYSQLURL=https://dev.mysql.com/get/Downloads/Connector-J
 export JDBCMYSQL=mysql-connector-java-5.1.47.tar.gz
 
-export LIBREOFFICE=https://download.documentfoundation.org/libreoffice/stable/6.2.4/deb/x86_64/LibreOffice_6.2.4_Linux_x86-64_deb.tar.gz
+export LIBREOFFICE=https://ftp.cixug.es/tdf/libreoffice/stable/6.3.4/deb/x86_64/LibreOffice_6.3.4_Linux_x86-64_deb.tar.gz
 export ALFRESCO_PDF_RENDERER=https://artifacts.alfresco.com/nexus/service/local/repositories/releases/content/org/alfresco/alfresco-pdf-renderer/1.1/alfresco-pdf-renderer-1.1-linux.tgz
 
-export ALFREPOWAR=https://downloads.loftux.net/public/content/org/alfresco/content-services-community/6.1.1/content-services-community-6.1.1.war
-export ALFSHAREWAR=https://downloads.loftux.net/public/content/org/alfresco/share/6.1.0/share-6.1.0.war
-export ALFSHARESERVICES=https://downloads.loftux.net/public/content/org/alfresco/alfresco-share-services/6.1.0/alfresco-share-services-6.1.0.amp
-export ALFMMTJAR=https://downloads.loftux.net/public/content/org/alfresco/alfresco-mmt/6.0/alfresco-mmt-6.0.jar
+export ALFREPOWAR=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/content-services-community/6.2.0-ga/content-services-community-6.2.0-ga.war
+export ALFSHAREWAR=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/share/6.2.0/share-6.2.0.war
+export ALFSHARESERVICES=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/alfresco-share-services/6.2.0/alfresco-share-services-6.2.0.amp
+export ALFMMTJAR=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/alfresco-mmt/6.0/alfresco-mmt-6.0.jar
 
-export ASS_DOWNLOAD=https://downloads.loftux.net/public/content/org/alfresco/alfresco-search-services/1.3.0.1/alfresco-search-services-1.3.0.1.zip
+export ASS_DOWNLOAD=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/alfresco-search-services/1.4.0/alfresco-search-services-1.4.0.zip
 
 export LXALFREPOWAR=https://downloads.loftux.net/alfresco/alfresco-platform/LX101/alfresco-platform-LX101.war
 export LXALFSHAREWAR=https://downloads.loftux.net/alfresco/share/LX101/share-LX101.war
@@ -49,15 +49,14 @@ export LXAOS_AMP=https://downloads.loftux.net/alfresco/aos-module/alfresco-aos-m
 export GOOGLEDOCSREPO=https://downloads.loftux.net/public/content/org/alfresco/integrations/alfresco-googledocs-repo/3.0.4.3/alfresco-googledocs-repo-3.0.4.3.amp
 export GOOGLEDOCSSHARE=https://downloads.loftux.net/public/content/org/alfresco/integrations/alfresco-googledocs-share/3.0.4.3/alfresco-googledocs-share-3.0.4.3.amp
 
-export AOS_VTI=https://downloads.loftux.net/public/content/org/alfresco/aos-module/alfresco-vti-bin/1.2.2/alfresco-vti-bin-1.2.2.war
-export AOS_SERVER_ROOT=https://downloads.loftux.net/public/content/org/alfresco/alfresco-server-root/6.0.1/alfresco-server-root-6.0.1.war
-export AOS_AMP=https://downloads.loftux.net/public/content/org/alfresco/aos-module/alfresco-aos-module/1.2.2/alfresco-aos-module-1.2.2.amp
+export AOS_VTI=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/aos-module/alfresco-vti-bin/1.3.0/alfresco-vti-bin-1.3.0.war
+export AOS_SERVER_ROOT=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/alfresco-server-root/6.0.1/alfresco-server-root-6.0.1.war
+export AOS_AMP=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/aos-module/alfresco-aos-module/1.3.0/alfresco-aos-module-1.3.0.amp
 
 export BASE_BART_DOWNLOAD=https://raw.githubusercontent.com/toniblyx/alfresco-backup-and-recovery-tool/master/src/
 
 export BART_PROPERTIES=alfresco-bart.properties
 export BART_EXECUTE=alfresco-bart.sh
-
 
 # Color variables
 txtund=$(tput sgr 0 1)          # Underline
@@ -83,16 +82,18 @@ echogreen () {
 }
 cd /tmp
 if [ -d "alfrescoinstall" ]; then
-	rm -rf alfrescoinstall
+        rm -rf alfrescoinstall
 fi
 mkdir alfrescoinstall
 cd ./alfrescoinstall
 
 echo
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-echogreen "Alfresco Ubuntu installer by Loftux AB."
-echogreen "Please read the documentation at"
+echogreen "Alfresco Ubuntu installer by Loftux AB. Modified by Aletibazo"
+echogreen "Please read the original documentation at"
 echogreen "https://github.com/loftuxab/alfresco-ubuntu-install."
+echogreen "For documentation about this version go to"
+echogreen "https://github.com/Aletibazo/alfresco-ubuntu-install"
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 echo
 
@@ -147,7 +148,7 @@ if [ "`which systemctl`" = "" ]; then
   if [ "$useupstart" = "n" ]; then
     export ISON1604=y
   fi
-else 
+else
   export ISON1604=y
   echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
   echo "You are installing for version 16.04 or later (using systemd for services)."
@@ -275,7 +276,7 @@ if [ "$installtomcat" = "y" ]; then
   sudo mkdir -p $CATALINA_HOME/conf/Catalina/localhost
   # Get Alfresco config
   echo "Downloading tomcat configuration files..."
-  
+
   sudo curl -# -o $CATALINA_HOME/conf/server.xml $BASE_DOWNLOAD/tomcat/server.xml
   sudo curl -# -o $CATALINA_HOME/conf/catalina.properties $BASE_DOWNLOAD/tomcat/catalina.properties
   sudo curl -# -o $CATALINA_HOME/conf/tomcat-users.xml $BASE_DOWNLOAD/tomcat/tomcat-users.xml
@@ -284,7 +285,7 @@ if [ "$installtomcat" = "y" ]; then
     sudo curl -# -o /etc/systemd/system/alfresco.service $BASE_DOWNLOAD/tomcat/alfresco.service
     sudo curl -# -o $ALF_HOME/alfresco-service.sh $BASE_DOWNLOAD/scripts/alfresco-service.sh
     sudo chmod 755 $ALF_HOME/alfresco-service.sh
-    sudo sed -i "s/@@LOCALESUPPORT@@/$LOCALESUPPORT/g" $ALF_HOME/alfresco-service.sh 
+    sudo sed -i "s/@@LOCALESUPPORT@@/$LOCALESUPPORT/g" $ALF_HOME/alfresco-service.sh
     # Enable the service
     sudo systemctl enable alfresco.service
     sudo systemctl daemon-reload
@@ -332,17 +333,17 @@ if [ "$installtomcat" = "y" ]; then
   echo
   read -e -p "Install Postgres JDBC Connector${ques} [y/n] " -i "$DEFAULTYESNO" installpg
   if [ "$installpg" = "y" ]; then
-	curl -# -O $JDBCPOSTGRESURL/$JDBCPOSTGRES
-	sudo mv $JDBCPOSTGRES $CATALINA_HOME/lib
+        curl -# -O $JDBCPOSTGRESURL/$JDBCPOSTGRES
+        sudo mv $JDBCPOSTGRES $CATALINA_HOME/lib
   fi
   echo
   read -e -p "Install Mysql JDBC Connector${ques} [y/n] " -i "$DEFAULTYESNO" installmy
   if [ "$installmy" = "y" ]; then
     cd /tmp/alfrescoinstall
-	curl -# -L -O $JDBCMYSQLURL/$JDBCMYSQL
-	tar xf $JDBCMYSQL
-	cd "$(find . -type d -name "mysql-connector*")"
-	sudo mv mysql-connector*.jar $CATALINA_HOME/lib
+        curl -# -L -O $JDBCMYSQLURL/$JDBCMYSQL
+        tar xf $JDBCMYSQL
+        cd "$(find . -type d -name "mysql-connector*")"
+        sudo mv mysql-connector*.jar $CATALINA_HOME/lib
   fi
   sudo chown -R $ALF_USER:$ALF_GROUP $ALF_HOME
   echo
@@ -383,7 +384,7 @@ EOF
   sudo mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.sample
   sudo curl -# -o /etc/nginx/nginx.conf $BASE_DOWNLOAD/nginx/nginx.conf
   sudo curl -# -o /etc/nginx/conf.d/alfresco.conf $BASE_DOWNLOAD/nginx/alfresco.conf
-  sudo curl -# -o /etc/nginx/conf.d/alfresco.conf.ssl $BASE_DOWNLOAD/nginx/alfresco.conf.ssl 
+  sudo curl -# -o /etc/nginx/conf.d/alfresco.conf.ssl $BASE_DOWNLOAD/nginx/alfresco.conf.ssl
   sudo curl -# -o /etc/nginx/conf.d/basic-settings.conf $BASE_DOWNLOAD/nginx/basic-settings.conf
   sudo mkdir -p /var/cache/nginx/alfresco
   # Make the ssl dir as this is what is used in sample config
@@ -408,13 +409,13 @@ fi
 echo
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 echo "Install Java JDK."
-echo "This will install OpenJDK 8 version of Java. If you prefer Oracle Java 8 "
+echo "This will install OpenJDK 11 version of Java. If you prefer Oracle Java 11 "
 echo "you need to download and install that manually."
 echoblue "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 read -e -p "Install OpenJDK${ques} [y/n] " -i "$DEFAULTYESNO" installjdk
 if [ "$installjdk" = "y" ]; then
   echoblue "Installing OpenJDK..."
-  sudo apt-get $APTVERBOSITY install openjdk-8-jre-headless
+  sudo apt-get $APTVERBOSITY install openjdk-11-jre-headless
   echo
   echogreen "Make sure correct default java is selected!"
   echo
@@ -834,9 +835,12 @@ echo "   DBNAME,DBUSER,DBPASS,DBHOST,REC_MYDBNAME,REC_MYUSER,REC_MYPASS,REC_MYHO
 echo
 echo "5. Update cpu settings in $ALF_HOME/scripts/limitconvert.sh if you have more than 2 cores."
 echo
-echo "6. Start nginx if you have installed it: sudo service nginx start"
+echo "6. Remove endorsed dirs configurations from $ALF_HOME/tomcat/bin/catalina.sh."
+echo "   Endorsed dirs have been removed since Java 9, so if you do not do this Alfresco will not start."
 echo
-echo "7. Start Alfresco/tomcat:"
+echo "7. Start nginx if you have installed it: sudo service nginx start"
+echo
+echo "8. Start Alfresco/tomcat:"
 
 echo "   sudo $ALF_HOME/alfresco-service.sh start"
 
