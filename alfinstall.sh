@@ -24,18 +24,18 @@ export KEYSTOREBASE=https://svn.alfresco.com/repos/alfresco-open-mirror/alfresco
 #export LOCALESUPPORT=sv_SE.utf8
 export LOCALESUPPORT=es_ES.utf8
 
-export TOMCAT_DOWNLOAD=http://ftp.cixug.es/apache/tomcat/tomcat-8/v8.5.50/bin/apache-tomcat-8.5.50.tar.gz
+export TOMCAT_DOWNLOAD=http://ftp.cixug.es/apache/tomcat/tomcat-9/v9.0.36/bin/apache-tomcat-9.0.36.tar.gz
 export JDBCPOSTGRESURL=https://jdbc.postgresql.org/download
-export JDBCPOSTGRES=postgresql-42.2.9.jar
+export JDBCPOSTGRES=postgresql-42.2.12.jar
 export JDBCMYSQLURL=https://dev.mysql.com/get/Downloads/Connector-J
 export JDBCMYSQL=mysql-connector-java-5.1.47.tar.gz
 
-export LIBREOFFICE=https://ftp.cixug.es/tdf/libreoffice/stable/6.3.4/deb/x86_64/LibreOffice_6.3.4_Linux_x86-64_deb.tar.gz
+export LIBREOFFICE=https://ftp.cixug.es/tdf/libreoffice/stable/6.4.5/deb/x86_64/LibreOffice_6.4.5_Linux_x86-64_deb.tar.gz
 export ALFRESCO_PDF_RENDERER=https://artifacts.alfresco.com/nexus/service/local/repositories/releases/content/org/alfresco/alfresco-pdf-renderer/1.1/alfresco-pdf-renderer-1.1-linux.tgz
 
 export ALFREPOWAR=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/content-services-community/6.2.0-ga/content-services-community-6.2.0-ga.war
-export ALFSHAREWAR=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/share/6.2.0/share-6.2.0.war
-export ALFSHARESERVICES=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/alfresco-share-services/6.2.0/alfresco-share-services-6.2.0.amp
+export ALFSHAREWAR=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/share/6.2.2/share-6.2.2.war
+export ALFSHARESERVICES=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/alfresco-share-services/6.2.2/alfresco-share-services-6.2.2.amp
 export ALFMMTJAR=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/alfresco-mmt/6.0/alfresco-mmt-6.0.jar
 
 export ASS_DOWNLOAD=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/alfresco-search-services/1.4.0/alfresco-search-services-1.4.0.zip
@@ -46,12 +46,12 @@ export LXALFSHARESERVICES=https://downloads.loftux.net/alfresco/alfresco-share-s
 export LXAOS_AMP=https://downloads.loftux.net/alfresco/aos-module/alfresco-aos-module/1.2.0.1/alfresco-aos-module-1.2.0.1.amp
 
 
-export GOOGLEDOCSREPO=https://downloads.loftux.net/public/content/org/alfresco/integrations/alfresco-googledocs-repo/3.0.4.3/alfresco-googledocs-repo-3.0.4.3.amp
-export GOOGLEDOCSSHARE=https://downloads.loftux.net/public/content/org/alfresco/integrations/alfresco-googledocs-share/3.0.4.3/alfresco-googledocs-share-3.0.4.3.amp
+export GOOGLEDOCSREPO=https://downloads.loftux.net/public/content/org/alfresco/integrations/alfresco-googledocs-repo/3.0.4.4/alfresco-googledocs-repo-3.0.4.4.amp
+export GOOGLEDOCSSHARE=https://downloads.loftux.net/public/content/org/alfresco/integrations/alfresco-googledocs-share/3.0.4.4/alfresco-googledocs-share-3.0.4.4.amp
 
-export AOS_VTI=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/aos-module/alfresco-vti-bin/1.3.0/alfresco-vti-bin-1.3.0.war
+export AOS_VTI=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/aos-module/alfresco-vti-bin/1.3.1/alfresco-vti-bin-1.3.1.war
 export AOS_SERVER_ROOT=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/alfresco-server-root/6.0.1/alfresco-server-root-6.0.1.war
-export AOS_AMP=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/aos-module/alfresco-aos-module/1.3.0/alfresco-aos-module-1.3.0.amp
+export AOS_AMP=https://artifacts.alfresco.com/nexus/content/groups/public/org/alfresco/aos-module/alfresco-aos-module/1.3.1/alfresco-aos-module-1.3.1.amp
 
 export BASE_BART_DOWNLOAD=https://raw.githubusercontent.com/toniblyx/alfresco-backup-and-recovery-tool/master/src/
 
